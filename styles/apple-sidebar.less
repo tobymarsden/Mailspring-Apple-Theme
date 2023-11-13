@@ -1,4 +1,4 @@
-@import 'ui-variables';
+@import "ui-variables";
 
 // ============================
 //  Sidebar Base
@@ -9,7 +9,7 @@
 .account-sidebar,
 .toolbar-RootSidebar {
   height: 100%;
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
   // If NOT Retina display, subpixel-antialias fonts instead
   @media not screen and (-webkit-min-device-pixel-ratio: 1.3),
     not screen and (-o-min-device-pixel-ratio: 13/10),
@@ -39,7 +39,7 @@
 .account-sidebar .heading {
   font-size: 12px;
   font-weight: bold;
-  color: #AAA9AA;
+  color: #aaa9aa;
   margin-bottom: 10px;
   padding: 0;
 }
@@ -60,13 +60,11 @@
   }
 }
 
-
-
 .account-sidebar .item,
 .account-sidebar .item.selected {
   color: @sidebar-text;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   padding-right: 0;
 }
 
@@ -126,11 +124,11 @@
 //====================================================
 
 .outline-view .item .item-count-box.alt-count {
-  background: #D0D0D0;
-  color: #6B6B6B;
+  background: #d0d0d0;
+  color: #6b6b6b;
   border-radius: 12px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .outline-view .item .item-count-box {
@@ -200,7 +198,7 @@
 }
 
 .account-sidebar-sections section .item-container .item.selected {
-  background: #D0D0D0 !important;
+  background: #d0d0d0 !important;
   border-radius: 6px;
   color: #000000 !important;
   padding-left: 16px !important;
@@ -227,19 +225,21 @@
   padding-bottom: 4px;
 }
 
-.account-sidebar .item img.content-mask, .account-sidebar .add-item-button img {
-  background-color: #0276FD !important;
+.account-sidebar .item img.content-mask,
+.account-sidebar .add-item-button img {
+  background-color: #0276fd !important;
 }
 
 .account-sidebar .add-item-button img #Starred {
-  background-color: #FABB25 !important;
+  background-color: #fabb25 !important;
 }
 
 .account-sidebar {
   margin-top: 0px !important;
 }
 
-.thread-list .thread-icon.thread-icon-star, .thread-list .thread-icon-star-on-hover:hover {
+.thread-list .thread-icon.thread-icon-star,
+.thread-list .thread-icon-star-on-hover:hover {
   background-color: #ff0000;
 }
 
@@ -248,7 +248,7 @@
 }
 
 .sidebar-activity {
-  background: #E9E9E9;
+  background: #e9e9e9;
 }
 
 .account-switcher {
@@ -256,6 +256,46 @@
 }
 
 .account-switcher > img {
-  -webkit-mask-image: url(../static/images/composer/icon-composer-dropdown@1x.png) !important;
+  -webkit-user-drag: none !important;
+  zoom: 0.5 !important;
+  -webkit-mask-image: url(../static/images/composer/composer-caret@2x.png) !important;
+  -webkit-mask-repeat: no-repeat !important;
+  object-position: 10000px center !important;
   opacity: 1 !important;
+  background: #aaa9aa;
+  transform: rotateX(0deg);
+  transform: translate(0px, 15px);
+}
+
+.sidebar-activity {
+  background: #e9e9e9 !important;
+}
+
+//New Tag Search
+
+body.platform-win32 input[type="text"],
+body.platform-win32 input[type="email"],
+body.platform-win32 input[type="date"],
+body.platform-win32 input[type="datetime"],
+body.platform-win32 input[type="datetime-local"],
+body.platform-win32 input[type="month"],
+body.platform-win32 input[type="number"],
+body.platform-win32 input[type="password"],
+body.platform-win32 input[type="search"],
+body.platform-win32 input[type="tel"],
+body.platform-win32 input[type="time"],
+body.platform-win32 input[type="url"] {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none !important;
+  border-radius: 6px !important;
+  border: 1px solid #d3d3d3 !important;
+}
+
+.outline-view .item.editing .item-input {
+  margin-left: 0px !important;
+}
+
+body.platform-win32 .sheet-toolbar-container .btn-toolbar {
+  padding: 0 13px !important;
 }

@@ -98,10 +98,6 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   box-shadow: none !important;
 }
 
-body.platform-win32 .sheet-toolbar-container .btn-toolbar {
-  padding: 0 10px !important;
-}
-
 .sheet-toolbar .button-group {
   display: inline-block !important;
 }
@@ -115,9 +111,13 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar {
   margin-right: -11px !important;
 }
 
+#sheet-container > div > div.sheet-toolbar > div > div.toolbar-MessageList > div > button {
+  transform: translate(10px, 6px) !important;
+}
+
 body.platform-linux .toolbar-menu-control .btn-toolbar, body.platform-win32.window-type-default .toolbar-menu-control .btn-toolbar {
   margin-left: 11px;
-  transform: translateY(3px);
+  transform: translate(5px, 4px) !important;
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask {

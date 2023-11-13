@@ -46,11 +46,6 @@
   }
 }
 
-.composer-inner-wrap .composer-action-bar-wrap .composer-action-bar-content {
-  padding: 20px;
-  max-width: 100%;
-}
-
 // ============================
 //  Attachements
 // ============================
@@ -69,26 +64,40 @@
 }
 
 body.platform-win32 .button-dropdown.btn-emphasis .primary-item {
+  background: #10bcff !important;
   border-radius: 6px 0px 0px 6px;
+  border-left: 1px solid #00adef !important;
+  border-top: 1px solid #00adef !important;
+  border-bottom: 1px solid #00adef !important;
 }
 
 body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker {
+  background: #10bcff !important;
   border-radius: 0px 6px 6px 0px;
+  border-right: 1px solid #00adef !important;
+  border-top: 1px solid #00adef !important;
+  border-bottom: 1px solid #00adef !important;
 }
 
 body.platform-win32 .button-dropdown.btn-emphasis .primary-item:hover {
   border-radius: 6px 0px 0px 6px;
-  background: #30c5ff !important;
+  background: #10bcff !important;
+  border-left: 1px solid #00adef !important;
+  border-top: 1px solid #00adef !important;
+  border-bottom: 1px solid #00adef !important;
 }
 
 body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker:hover {
   border-radius: 0px 6px 6px 0px;
-  background: #30c5ff !important;
+  background: #10bcff !important;
+  border-right: 1px solid #00adef !important;
+  border-top: 1px solid #00adef !important;
+  border-bottom: 1px solid #00adef !important;
 }
 
 body.platform-win32 .button-dropdown.btn-emphasis .primary-item, body.platform-win32 .button-dropdown.btn-emphasis .secondary-picker, body.platform-win32 .button-dropdown.btn-emphasis .only-item {
   border: 0;
-  background: #30c5ff !important;
+  background: #10bcff !important;
 }
 
 #message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap .composer-action-bar-wrap {
@@ -232,4 +241,11 @@ body.is-blurred .tokenizing-field .token:not(.invalid) {
 body.platform-win32 .token.invalid:hover {
   color: #000000 !important;
   background: rgb(255, 188, 188) !important;
+}
+
+#message-list .message-item-area, #message-list .footer-reply-area-wrap .footer-reply-area {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
